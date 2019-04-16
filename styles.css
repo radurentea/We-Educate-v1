@@ -1,0 +1,272 @@
+:root {
+/*
+
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+*/
+/*Override Variables */
+--font-family-sans-serif: Kanit, -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+
+  /* Page Variables */
+  --light-blue: #0594fb;
+}
+
+body {
+    font-family: var(--font-family-sans-serif);
+    background-color: #eef2f5;
+}
+.container.main{
+    background-color: #fff;
+    margin-bottom: 1.5rem;
+}
+a.nav-link {
+    font-size: 1.3rem;
+    display: inline-block;
+}
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #141a49;
+}
+.navbar-brand{
+    margin-left: 20rem;
+    margin-top: -1.5rem;
+}
+nav a {
+    color: #fff;
+}
+nav a:hover {
+    color: #0594fb;
+}
+
+a.news-title {
+    font-size: 1.5rem;
+}
+h3{
+    font-size: 1.5rem;
+    /* font-style: italic; */
+    display: inline-block;
+    margin-bottom: 2rem;}
+
+.headline {
+    line-height: 1.5em;
+    color: #141a49;
+    font-size: 20px;
+    position: relative;
+  
+}
+.headline:after {
+  content:' ';
+  position: absolute;
+  top:100%;
+  left:10%;
+  width: 20px;
+  border:2px solid #141a49;
+  margin-top: 5px;
+  border-radius:4px;
+  box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05);
+  transform:translateX(-50%);
+
+}
+
+.esports-article {
+    margin-bottom: 1rem;
+}
+
+.top-title{
+    display: flex;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    border-bottom: 1px solid #eef2f5;
+}
+.videos {
+    display: flex;
+    justify-content: center;
+    background-color: #141a49;
+}
+.project-overlay {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(000, 000, 000, 0.5);
+            color: #fff;
+            padding: 50%;
+}
+
+.white {
+    color: white;
+}
+
+a.white:hover {
+    /* color: #fff; */
+    text-decoration: none;
+    color: #0594fb;
+}
+
+.img-carousel {
+    object-fit: none;
+    /* Do not scale the image */
+    object-position: center;
+    /* Center the image within the element */
+    width: 100%;
+    max-height: 20rem;
+    position: relative;
+
+}
+#demo {
+    width: 100%;
+}
+.col-5{
+    padding-left: 0;
+}
+.col-7 {
+    margin-top: -0.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+span.read-more{
+    display: flex;
+    justify-content: center;
+    /* align-self: flex-end; */
+}
+.col-8{
+    /* border-bottom: 1px solid #eef2f5; */
+    /* border-right: 1px solid #eef2f5; */
+}
+.row.esports-article{
+    background-color: #ecf6fd;
+}
+.modal-footer{
+    background-color: #fff;
+    border-top: none;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20rem;
+}
+.modal-dialog{
+    max-width: 1140px;
+    margin: 30px auto;
+}
+a.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 75px;
+  height: 75px;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+a.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+a.fa-twitter {
+  background: #55ACEE;
+  color: white;
+  margin-left: 1.5rem;
+}
+a.fa:hover {
+    opacity: 0.7;
+    text-decoration: none;
+}
+.btn.btn-outline-primary.btn-rounded.btn-md.ml-4{
+    border-color: #55ACEE;
+}
+.btn.btn-outline-primary.btn-rounded.btn-md.ml-4:hover{
+    background-color: #55ACEE;
+    border-color: #55ACEE;
+}
+.educate{
+    font-size: 1.25rem;
+}
+.social-buttons{
+    display:flex;
+    justify-content: center;
+}
+.modal-footer > :not(:first-child) {
+    margin-left: 1.5rem;
+}
+
+footer{
+    padding-top: 1.5rem;
+    max-width: 100%;
+    background-color: #141a49;
+    color: #fff;  
+    text-align: center;
+}
+.contact-info a {
+    padding: 10px;
+    display: inline-block;
+}
+.content-wrap{
+    display: flex;
+    justify-content: space-evenly;
+}
+footer p{
+    margin-bottom: 0;
+    padding-bottom: 1.5rem;
+}
+.row.footer-col{
+    margin-bottom: 1.5rem;
+}
+.social-buttons-footer{
+    display:flex;
+    justify-content: center;
+}
+.social-buttons-footer a.fa{
+    width: 50px;
+    height: 50px;
+    margin-left:1rem;
+}
+
+a.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+a.fa-instagram {
+  background: #125688;
+  color: white;
+}
+footer a{
+    color: #0594fb;
+}
+.social-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
