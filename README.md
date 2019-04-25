@@ -1,4 +1,4 @@
 # WeEducate
-Site made with Bootstrap 4.
+Practicing Bootstrap 4.
 
-All the articles and images are copied from the site https://hltv.org
+All the articles and images are copied from the site https://hltv.org except the "We Educate logo".
